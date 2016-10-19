@@ -43,7 +43,7 @@ export default React.createClass({
 
     return (
       <div>
-        <h1>Weather Component</h1>
+        <h1>Check Weather</h1>
         <WeatherForm onSearch={this.handleSearch} />
         {renderMessage()}
       </div>

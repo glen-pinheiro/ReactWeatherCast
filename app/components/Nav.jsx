@@ -8,7 +8,7 @@ export default React.createClass({
         <h1>Nav Component</h1>
         <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>WeatherCast</IndexLink>
         <Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About Me</Link>
-        <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Test link</Link>
+        <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Demo link</Link>
       </div>
     );
   }

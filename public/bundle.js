@@ -27133,11 +27133,7 @@
 	      'div',
 	      null,
 	      _react2.default.createElement(_Nav2.default, null),
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Main component'
-	      ),
+	      _react2.default.createElement('h2', null),
 	      _react2.default.createElement(
 	        'div',
 	        null,
@@ -27190,7 +27186,7 @@
 	      _react2.default.createElement(
 	        _reactRouter.Link,
 	        { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        'Test link'
+	        'Demo link'
 	      )
 	    );
 	  }
@@ -27272,7 +27268,7 @@
 	      _react2.default.createElement(
 	        'h1',
 	        null,
-	        'Weather Component'
+	        'Check Weather'
 	      ),
 	      _react2.default.createElement(_WeatherForm2.default, { onSearch: this.handleSearch }),
 	      renderMessage()
@@ -28947,7 +28943,7 @@
 	    return _react2.default.createElement(
 	      'h1',
 	      null,
-	      'Examples Component'
+	      'Demo Page'
 	    );
 	  }
 	});
