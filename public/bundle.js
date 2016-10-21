@@ -28936,17 +28936,23 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _react2.default.createClass({
-	  displayName: 'Examples',
-
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'h1',
-	      null,
-	      'Demo Page'
+	/*export default React.createClass({
+	  render: function() {
+	    return (
+	      <h1>Demo Page</h1>
 	    );
 	  }
-	});
+	});*/
+
+	var Examples = function Examples(props) {
+	  return _react2.default.createElement(
+	    'h1',
+	    null,
+	    'Demos'
+	  );
+	};
+
+	exports.default = Examples;
 
 /***/ }
 /******/ ]);
