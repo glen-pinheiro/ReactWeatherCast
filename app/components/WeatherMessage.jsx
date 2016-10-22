@@ -5,7 +5,7 @@ export default React.createClass({
     var location = this.props.location;
     var temp = this.props.temp;
     return (
-      <h3>Temprature in {location} is {temp}C.</h3>
+      <h3 className="text-center">Temprature in {location} is {temp}C.</h3>
     );
   }
 });

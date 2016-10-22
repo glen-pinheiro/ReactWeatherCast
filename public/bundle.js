@@ -27361,7 +27361,7 @@
 	      if (isLoading) {
 	        return _react2.default.createElement(
 	          'h3',
-	          null,
+	          { className: 'text-center' },
 	          'Fetching Weather...'
 	        );
 	      } else if (location && temp) {
@@ -27372,11 +27372,6 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Check Weather'
-	      ),
 	      _react2.default.createElement(_WeatherForm2.default, { onSearch: this.handleSearch }),
 	      renderMessage()
 	    );
@@ -27420,8 +27415,8 @@
 	        { onSubmit: this.onFormSubmit },
 	        _react2.default.createElement(
 	          'h1',
-	          null,
-	          'WeatherCast'
+	          { className: 'text-center' },
+	          'Find Weather'
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -27433,8 +27428,8 @@
 	          null,
 	          _react2.default.createElement(
 	            'button',
-	            { type: 'submit' },
-	            'Get Weather'
+	            { className: 'button expanded hollow', type: 'submit' },
+	            'Find out.'
 	          )
 	        )
 	      )
@@ -27446,7 +27441,7 @@
 /* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27459,19 +27454,19 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
-	  displayName: 'WeatherMessage',
+	  displayName: "WeatherMessage",
 
 	  render: function render() {
 	    var location = this.props.location;
 	    var temp = this.props.temp;
 	    return _react2.default.createElement(
-	      'h3',
-	      null,
-	      'Temprature in ',
+	      "h3",
+	      { className: "text-center" },
+	      "Temprature in ",
 	      location,
-	      ' is ',
+	      " is ",
 	      temp,
-	      'C.'
+	      "C."
 	    );
 	  }
 	});
@@ -28999,6 +28994,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(179);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
@@ -29007,10 +29004,10 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'row' },
 	      _react2.default.createElement(
 	        'h1',
-	        null,
+	        { className: 'text-center' },
 	        'About'
 	      ),
 	      _react2.default.createElement(
@@ -29022,6 +29019,16 @@
 	        'p',
 	        null,
 	        'Please help me build a better weatherforcast app. Thank you.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Find me on: ',
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'http://github.com/glen-pinheiro', target: '_blank' },
+	          'Github'
+	        )
 	      )
 	    );
 	  }

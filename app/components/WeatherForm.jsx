@@ -14,12 +14,12 @@ export default React.createClass({
     return (
       <div>
         <form onSubmit={this.onFormSubmit}>
-          <h1>WeatherCast</h1>
+          <h1 className="text-center">Find Weather</h1>
           <div>
             <input type="text" placeholder="Enter city name" ref="location" />
           </div>
           <div>
-            <button type="submit">Get Weather</button>
+            <button className="button expanded hollow" type="submit">Find out.</button>
           </div>
         </form>
       </div>
