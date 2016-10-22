@@ -6,8 +6,11 @@ export default React.createClass({
     return (
       <div>
         <Nav />
-        <h2></h2>
-        <div>{this.props.children}</div>
+        <div className="row">
+          <div className="columns medium-6 large-4 small-centered">
+            {this.props.children}
+          </div>
+        </div>
       </div>
     );
   }

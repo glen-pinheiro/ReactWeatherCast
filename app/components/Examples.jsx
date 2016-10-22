@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 /*export default React.createClass({
   render: function() {
@@ -10,7 +11,18 @@ import React from 'react';
 
 var Examples = (props) => {
   return (
-    <h1>Demos</h1>
+    <div>
+      <h1 className="text-center">Demo Page</h1>
+      <p>Demo page for testing.</p>
+      <ol>
+        <li>
+          <Link to="/?location=Kargil">Kargil</Link>
+        </li>
+        <li>
+          <Link to="/?location=Goa">Goa</Link>
+        </li>
+      </ol>
+    </div>
   )
 };
 

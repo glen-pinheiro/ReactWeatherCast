@@ -27192,11 +27192,14 @@
 	      'div',
 	      null,
 	      _react2.default.createElement(_Nav2.default, null),
-	      _react2.default.createElement('h2', null),
 	      _react2.default.createElement(
 	        'div',
-	        null,
-	        this.props.children
+	        { className: 'row' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'columns medium-6 large-4 small-centered' },
+	          this.props.children
+	        )
 	      )
 	    );
 	  }
@@ -29038,6 +29041,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(179);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	/*export default React.createClass({
@@ -29050,9 +29055,40 @@
 
 	var Examples = function Examples(props) {
 	  return _react2.default.createElement(
-	    'h1',
+	    'div',
 	    null,
-	    'Demos'
+	    _react2.default.createElement(
+	      'h1',
+	      { className: 'text-center' },
+	      'Demo Page'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Demo page for testing.'
+	    ),
+	    _react2.default.createElement(
+	      'ol',
+	      null,
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/?location=Kargil' },
+	          'Kargil'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/?location=Goa' },
+	          'Goa'
+	        )
+	      )
+	    )
 	  );
 	};
 
