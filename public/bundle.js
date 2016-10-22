@@ -27288,7 +27288,7 @@
 	            _react2.default.createElement(
 	              'li',
 	              null,
-	              _react2.default.createElement('input', { type: 'search', placeholder: 'Search' })
+	              _react2.default.createElement('input', { type: 'search', placeholder: 'Enter city name' })
 	            ),
 	            _react2.default.createElement(
 	              'li',
@@ -27441,7 +27441,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          _react2.default.createElement('input', { type: 'text', placeholder: 'Enter city name', ref: 'location' })
+	          _react2.default.createElement('input', { type: 'search', placeholder: 'Enter city name', ref: 'location' })
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -29092,7 +29092,7 @@
 	      { className: 'row' },
 	      _react2.default.createElement(
 	        'h1',
-	        { className: 'text-center' },
+	        { className: 'text-center page-title' },
 	        'About'
 	      ),
 	      _react2.default.createElement(
@@ -29151,7 +29151,7 @@
 	    null,
 	    _react2.default.createElement(
 	      'h1',
-	      { className: 'text-center' },
+	      { className: 'text-center page-title' },
 	      'Demo Page'
 	    ),
 	    _react2.default.createElement(
@@ -29571,7 +29571,7 @@
 
 
 	// module
-	exports.push([module.id, ".page-title {\r\n  margin-top: 2.5rem;\r\n  margin-bottom: 2.5rem;\r\n}\r\n", ""]);
+	exports.push([module.id, ".page-title {\r\n  margin-top: 2.5rem;\r\n  margin-bottom: 2.5rem;\r\n}\r\n\r\ninput[type=search] {\r\n  box-shadow: none;\r\n}\r\n", ""]);
 
 	// exports
 
