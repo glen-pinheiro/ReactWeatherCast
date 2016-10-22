@@ -27223,29 +27223,74 @@
 	exports.default = _react2.default.createClass({
 	  displayName: 'Nav',
 
+	  onSearch: function onSearch(e) {
+	    e.preventDefault();
+	  },
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'top-bar' },
 	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Nav Component'
+	        'div',
+	        { className: 'top-bar-left' },
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'menu' },
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'menu-text' },
+	            'WeatherCast'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.IndexLink,
+	              { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	              'WeatherCast'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	              'About Me'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	              'Demo link'
+	            )
+	          )
+	        )
 	      ),
 	      _react2.default.createElement(
-	        _reactRouter.IndexLink,
-	        { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        'WeatherCast'
-	      ),
-	      _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        'About Me'
-	      ),
-	      _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        'Demo link'
+	        'div',
+	        { className: 'top-bar-right' },
+	        _react2.default.createElement(
+	          'form',
+	          { onSubmit: this.onSearch },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'menu' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('input', { type: 'search', placeholder: 'Search' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('input', { type: 'submit', className: 'button', value: 'Search' })
+	            )
+	          )
+	        )
 	      )
 	    );
 	  }
