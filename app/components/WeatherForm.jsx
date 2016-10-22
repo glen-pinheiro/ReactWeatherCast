@@ -14,9 +14,9 @@ export default React.createClass({
     return (
       <div>
         <form onSubmit={this.onFormSubmit}>
-          <h1 className="text-center">Find Weather</h1>
+          <h1 className="text-center page-title">Find Weather</h1>
           <div>
-            <input type="text" placeholder="Enter city name" ref="location" />
+            <input type="search" placeholder="Enter city name" ref="location" />
           </div>
           <div>
             <button className="button expanded hollow" type="submit">Find out.</button>

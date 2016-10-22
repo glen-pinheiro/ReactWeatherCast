@@ -12,7 +12,7 @@ import {Link} from 'react-router';
 var Examples = (props) => {
   return (
     <div>
-      <h1 className="text-center">Demo Page</h1>
+      <h1 className="text-center page-title">Demo Page</h1>
       <p>Demo page for testing.</p>
       <ol>
         <li>
